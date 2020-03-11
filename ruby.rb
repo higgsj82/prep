@@ -39,3 +39,24 @@ def folding_cipher(str)
 
   return new_str
 end
+
+# Write a function that takes a year (four digit integer) and returns an array with the 10 closest subsequent years that meet the following condition: the first two digits summed with the last two digits are equal to the middle two digits. E.g.,
+
+# 1978 => 19 + 78 = 97
+# 2307 => 23 + 07 = 30
+
+# my solution
+def silly_years(year)
+  results = []
+  next_year = year
+  while results.length < 10
+    str = next_year.to_s
+    if str[0..1].to_i + str[2..3].to_i == str[1..2].to_i
+      results << next_year
+    end
+    next_year += 1
+  end
+  return results
+end
+
+puts silly_years(2308)
