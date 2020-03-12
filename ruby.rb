@@ -59,4 +59,45 @@ def silly_years(year)
   return results
 end
 
-puts silly_years(2308)
+# puts silly_years(2307)
+# puts silly_years(2308)
+
+# productify
+# Given a list of numbers in an array, replace all the numbers with the product of all other numbers. Do this in O(n) time without using division.
+
+# Raz's solution
+def productify(arr)
+  new_arr = []
+  i = 0 
+
+  while i < arr.length 
+    product = 1
+    (0...arr.length).each do |j|
+      if i != j
+        product *= arr[j]
+      end
+    end
+    new_arr << product
+    i += 1
+  end
+  return new_arr
+end
+
+# aA solution
+def productify(arr)
+  products = Array.new(arr.length, 1)
+
+  lower_prod = 1
+  0.upto(arr.size - 1) do |i|
+    products[i] = products[i] * lower_prod
+    lower_prod = lower_prod * arr[i]
+  end
+
+  upper_prod = 1
+  (arr.size - 1).downto(0) do |i|
+    products[i] = products[i] * upper_prod
+    upper_prod = upper_prod * arr[i]
+  end
+
+  products
+end
