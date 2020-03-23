@@ -183,3 +183,45 @@ def subsets(arr)
 end
 
 
+# fast_intersection
+# Given arr1 and arr2, find the intersection of both sets. It should 
+# be trivial to write an O(n**2) solution. Use sorting to solve in 
+# O(nlog(n)). Next, improve this to O(n) time (maybe use a non-array 
+# datastructure).
+
+# aA solution
+# O(n**2) solution
+def intersection1(arr1, arr2)
+  arr1.uniq.select { |el| arr2.include?(el) }
+end
+
+# O(nlogn) solution
+def intersection2(arr1, arr2)
+  arr1, arr2, idx1, idx2 = arr1.sort, arr2.sort, 0, 0
+
+  intersection = []
+  while idx1 < arr1.length && idx2 < arr2.length
+    case arr1[idx1] <=> arr2[idx2]
+    when -1
+      idx1 += 1
+    when 0
+      intersection << arr1[idx1]
+      idx1 += 1
+      idx2 += 1
+    when 1
+      idx2 += 1
+    end
+  end
+  intersection
+end
+
+# O(n) solution
+def intersection3(arr1, arr2)
+  intersection = []
+  set_1 = arr1.to_set
+  arr2.each do |el|
+    intersection << el if set_1.include?(el)
+  end
+
+  intersection
+end
