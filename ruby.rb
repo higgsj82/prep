@@ -225,3 +225,28 @@ def intersection3(arr1, arr2)
 
   intersection
 end
+
+# can_win?
+# Given an array and index, find if it's possible to reach the 
+# value 0 by starting at the given index and repeatedly moving 
+# left/right by the distance found at array[index].
+
+# Example:
+
+# can_win?([1, 0, 1], 0)
+# => true
+
+# can_win?([1, 2, 0], 0)
+# => false
+
+# aA recursive solution
+
+def can_win?(arr, pos = 0, seen = {})
+  return false if !pos.between?(0, arr.length - 1) || seen[pos]
+  return true if arr[pos].zero?
+
+  seen[pos] = true
+
+  can_win?(arr, pos + arr[pos], seen) ||
+  can_win?(arr, pos - arr[pos], seen)
+end
