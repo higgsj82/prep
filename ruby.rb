@@ -250,3 +250,31 @@ def can_win?(arr, pos = 0, seen = {})
   can_win?(arr, pos + arr[pos], seen) ||
   can_win?(arr, pos - arr[pos], seen)
 end
+
+# aA iterative solution
+def can_win(array, index)
+  positions_to_try = [index]
+  visited_positions = Array.new(array.length, false)
+  visited_positions[index] = true
+
+  until positions_to_try.empty?
+    # We should probably use a queue for this.
+    position = positions_to_try.shift
+    value = array[position]
+
+    if value == 0
+      return true
+    end
+
+    [position + value, position - value].each do |pos|
+      next if visited_positions[pos]
+      next if (pos < 0 || array.length <= pos)
+
+      positions_to_try << pos
+      # This insures we don't add a position twice to our queue.
+      visited_positions[pos] = true
+    end
+  end
+
+  false
+end
