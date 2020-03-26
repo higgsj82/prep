@@ -300,13 +300,14 @@ def weighted_random_index(arr)
   end
 end
 
-move_zeros
-Given an array, move all zeros to the end. The order of non-zero elements does not matter. Ex:
+# move_zeros
+# Given an array, move all zeros to the end. The order of non-zero 
+# elements does not matter. Ex:
 
-move_zeros([1, 2, 0, 3, 4, 0, 5, 6, 0]) == [1, 2, 6, 3, 4, 5, 0, 0, 0]
-Algorithm should be O(n); use O(1) extra space.
+# move_zeros([1, 2, 0, 3, 4, 0, 5, 6, 0]) == [1, 2, 6, 3, 4, 5, 0, 0, 0]
+# Algorithm should be O(n); use O(1) extra space.
 
-Solution
+# aA solution
 def move_zeros(array)
   current_index = 0
   num_zeros = 0
@@ -342,3 +343,5 @@ def move_zeros2(arr)
   end
   arr
 end
+
+
