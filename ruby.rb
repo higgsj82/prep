@@ -344,25 +344,29 @@ def move_zeros2(arr)
   arr
 end
 
-look_and_say
-Implement the 'look and say' function. 'Look and say' takes an input array and outputs an array that describes the count of the elements in the input array as they appear in order.
+# look_and_say
+# Implement the 'look and say' function. 'Look and say' takes an 
+# input array and outputs an array that describes the count of the 
+# elements in the input array as they appear in order.
 
-Example:
+# Example:
 
 # there is one '1' in the input array
-look_and_say([1]) == [[1, 1]]
+# look_and_say([1]) == [[1, 1]]
 
 # there are two '1's in the input array
-look_and_say([1, 1]) == [[2, 1]]
+# look_and_say([1, 1]) == [[2, 1]]
 
 # there is one '2', followed by one '1' in the input array
-look_and_say([2, 1]) == [[1, 2], [1, 1]]
+# look_and_say([2, 1]) == [[1, 2], [1, 1]]
 
 # is one '1', followed by one '2', followed by 2 '1's in the input
 # array
-look_and_say([1, 2, 1, 1]) == [[1, 1], [1, 2], [2, 1]]
-Solution
-Maintain a current count, maintain a current element. Push both onto new array when a different element is detected.
+# look_and_say([1, 2, 1, 1]) == [[1, 1], [1, 2], [2, 1]]
+
+# aA solution
+# Maintain a current count, maintain a current element. Push both 
+# onto new array when a different element is detected.
 
 def look_and_say(array)
   return [] if array.empty?
