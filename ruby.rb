@@ -385,12 +385,15 @@ def look_and_say(array)
   output
 end
 
-StackQueue
-Implement a queue using stacks. That is, write enqueue and dequeue using only push and pop operations.
+# StackQueue
+# Implement a queue using stacks. That is, write enqueue and 
+# dequeue using only push and pop operations.
 
-In terms of performance, enqueue should be O(1), but dequeue may be worst-case O(n). In terms of ammortized time, dequeue should be O(1). Prove that your solution accomplishes this.
+# In terms of performance, enqueue should be O(1), but dequeue may 
+# be worst-case O(n). In terms of ammortized time, dequeue should 
+# be O(1). Prove that your solution accomplishes this.
 
-Solution
+# aA solution
 class StackQueue
   def initialize
     @in, @out = [], []
