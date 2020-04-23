@@ -1,7 +1,7 @@
 // Two Number Sum
+function twoNumberSum(array, targetSum) {}
 
 // Three Number Sum
-
 function threeNumberSum(array, targetSum) {
     let sortedArr = array.sort();
 
