@@ -1,3 +1,5 @@
+// Two Number Sum
+
 // Three Number Sum
 
 function threeNumberSum(array, targetSum) {
