@@ -7,6 +7,7 @@ function twoNumberSum(array, targetSum) {
             }
         }
     }
+    return [];
 }
 
 // Three Number Sum
