@@ -1,5 +1,9 @@
 // Two Number Sum
-function twoNumberSum(array, targetSum) {}
+function twoNumberSum(array, targetSum) {
+    for (let i = 0; i < array.length; i++) {
+        
+    }
+}
 
 // Three Number Sum
 function threeNumberSum(array, targetSum) {
