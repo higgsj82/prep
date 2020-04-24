@@ -10,7 +10,7 @@ function twoNumberSum(array, targetSum) {
     return [];
 }
 
-// isPalindrome
+// Palindrome Check
 
 
 // Three Number Sum
