@@ -26,6 +26,7 @@ function isPalindrome(string) {
             return false;
         }
         leftIdx++;
+        rightIdx--;
     }
 }
 
