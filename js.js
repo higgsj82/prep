@@ -10,11 +10,13 @@ function twoNumberSum(array, targetSum) {
     return [];
 }
 
-// Palindrome Check
+// Palindrome Check (bad time)
 function isPalindrome(string) {
     let revString = string.split('').reverse().join('');
     return string === revString;
 }
+
+// Palindrome Check 0(n) time | 0(1) space
 
 
 // Three Number Sum
