@@ -10,6 +10,9 @@ function twoNumberSum(array, targetSum) {
     return [];
 }
 
+// isPalindrome
+
+
 // Three Number Sum
 function threeNumberSum(array, targetSum) {
     let sortedArr = array.sort();
