@@ -25,6 +25,7 @@ function isPalindrome(string) {
         if (string[leftIdx] !== string[rightIdx]) {
             return false;
         }
+        leftIdx++;
     }
 }
 
