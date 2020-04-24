@@ -11,7 +11,7 @@ function twoNumberSum(array, targetSum) {
 }
 
 // Palindrome Check
-function isPalindrome() {
+function isPalindrome(string) {
     
 }
 
