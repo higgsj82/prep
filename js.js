@@ -28,6 +28,7 @@ function isPalindrome(string) {
         leftIdx++;
         rightIdx--;
     }
+    return true;
 }
 
 // Three Number Sum
