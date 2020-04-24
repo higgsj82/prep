@@ -18,7 +18,8 @@ function isPalindrome(string) {
 
 // Palindrome Check 0(n) time | 0(1) space
 function isPalindrome(string) {
-    
+    let leftIdx = 0;
+    let rightIDX = string.length - 1;
 }
 
 // Three Number Sum
