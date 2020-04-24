@@ -12,7 +12,7 @@ function twoNumberSum(array, targetSum) {
 
 // Palindrome Check
 function isPalindrome(string) {
-    let revString = string.split('').reverse()
+    let revString = string.split('').reverse().join('')
 }
 
 
