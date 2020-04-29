@@ -48,6 +48,6 @@ function moveEleToEnd(array, toMove) {
     let j = array.length - 1;
 
     while (i < j) {
-        
+        while (i < j && array[j] === toMove) j--;
     }
 }
