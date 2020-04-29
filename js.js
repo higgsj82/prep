@@ -41,3 +41,8 @@ function isPalindrome(string) {
 //         let right = sortedArr[i + 1];
 // 	}
 // }
+
+// Move Element to End
+function moveEleToEnd(array, toMove) {
+    
+}
