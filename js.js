@@ -44,5 +44,8 @@ function isPalindrome(string) {
 
 // Move Element to End
 function moveEleToEnd(array, toMove) {
+    let i = 0;
+    let j = array.length - 1;
+
     
 }
