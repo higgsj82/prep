@@ -54,3 +54,8 @@ function moveEleToEnd(array, toMove) {
     }
     return array;
 }
+
+// helper function
+function swap(i, j, array) {
+    
+}
