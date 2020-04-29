@@ -52,4 +52,5 @@ function moveEleToEnd(array, toMove) {
         if (array[i] === toMove) swap(i, j, array);
         i++;
     }
+    return array;
 }
