@@ -49,5 +49,6 @@ function moveEleToEnd(array, toMove) {
 
     while (i < j) {
         while (i < j && array[j] === toMove) j--;
+        if (array[i] === toMove) swap(i, j, array);
     }
 }
