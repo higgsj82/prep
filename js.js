@@ -64,3 +64,10 @@ function swap(i, j, array) {
 
 
 // Branch Sums
+class BinaryTree {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
