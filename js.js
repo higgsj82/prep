@@ -61,3 +61,6 @@ function swap(i, j, array) {
     array[j] = array[i];
     array[i] = temp;
 }
+
+
+// Branch Sums
