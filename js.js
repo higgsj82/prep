@@ -77,3 +77,7 @@ function branchSums(root) {
     calcBranchSums(root, 0, sums);
     return sums;
 }
+
+function calcBranchSums(node, changingSum, sums) {
+
+}
