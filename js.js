@@ -82,4 +82,8 @@ function calcBranchSums(node, changingSum, sums) {
     if (!node) return;
 
     const newSum = changingSum + node.value;
+    if (!node.left && !node.right) {
+        sums.push(newSum);
+        return;
+    }
 }
