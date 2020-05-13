@@ -86,4 +86,6 @@ function calcBranchSums(node, changingSum, sums) {
         sums.push(newSum);
         return;
     }
+
+    calcBranchSums(node.left, newSum, sums);
 }
