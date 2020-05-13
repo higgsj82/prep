@@ -71,3 +71,7 @@ class BinaryTree {
         this.right = null;
     }
 }
+
+function branchSums(root) {
+    
+}
