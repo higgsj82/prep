@@ -81,5 +81,5 @@ function branchSums(root) {
 function calcBranchSums(node, changingSum, sums) {
     if (!node) return;
 
-    
+    const newSum = changingSum + node.value;
 }
